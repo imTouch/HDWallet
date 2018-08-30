@@ -6,12 +6,12 @@ Pod::Spec.new do |spec|
                        A pure and powerful Swift HDWallet library.
                        ```
                     DESC
-  spec.homepage = 'https://github.com/CryptoTouch/HDWallet'
+  spec.homepage = 'https://github.com/imTouch/HDWallet'
   spec.license = { :type => 'Apache 2.0', :file => 'LICENSE' }
   spec.author = 'Liu Pengpeng'
 
   spec.requires_arc = true
-  spec.source = { git: 'https://github.com/CryptoTouch/HDWallet.git', tag: "v#{spec.version}" }
+  spec.source = { git: 'https://github.com/imTouch/HDWallet.git', tag: "v#{spec.version}" }
   spec.source_files = 'HDWallet/**/*.{h,m,swift}'
   spec.private_header_files = 'HDWallet/**/HDWalletInternal.h'
   spec.module_map = 'HDWallet/HDWallet.modulemap'
