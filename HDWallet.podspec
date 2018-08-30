@@ -8,15 +8,14 @@ Pod::Spec.new do |spec|
                     DESC
   spec.homepage = 'https://github.com/CryptoTouch/HDWallet'
   spec.license = { :type => 'Apache 2.0', :file => 'LICENSE' }
-  spec.author = { 'Liu Pengpeng' => 'i@liupengpeng.com' }
-  spec.social_media_url = 'https://twitter.com/pengpengliu'
+  spec.author = 'Liu Pengpeng'
 
   spec.requires_arc = true
   spec.source = { git: 'https://github.com/CryptoTouch/HDWallet.git', tag: "v#{spec.version}" }
   spec.source_files = 'HDWallet/**/*.{h,m,swift}'
-  # spec.private_header_files = 'HDWallet/**/HDWalletInternal.h'
+  spec.private_header_files = 'HDWallet/**/HDWalletInternal.h'
   spec.module_map = 'HDWallet/HDWallet.modulemap'
-  spec.ios.deployment_target = '11.0'
+  spec.ios.deployment_target = '8.0'
   spec.swift_version = '4.1'
 
   spec.pod_target_xcconfig = { 'SWIFT_WHOLE_MODULE_OPTIMIZATION' => 'YES',
