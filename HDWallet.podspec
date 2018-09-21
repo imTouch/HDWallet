@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name = 'HDWallet'
-  spec.version = '0.1.0'
+  spec.version = '0.1.1'
   spec.summary = 'Hierarchical Deterministic Wallet'
   spec.description = <<-DESC
                        A pure and powerful Swift HDWallet library.
@@ -23,7 +23,6 @@ Pod::Spec.new do |spec|
                                'SWIFT_INCLUDE_PATHS' => '${PODS_ROOT}/HDWallet/Libraries',
                                'HEADER_SEARCH_PATHS' => '"${PODS_ROOT}/HDWallet/Libraries/openssl/include" "${PODS_ROOT}/HDWallet/Libraries/secp256k1/include"',
                                'LIBRARY_SEARCH_PATHS' => '"${PODS_ROOT}/HDWallet/Libraries/openssl/lib" "${PODS_ROOT}/HDWallet/Libraries/secp256k1/lib"' }
-  spec.preserve_paths = ['setup', 'Libraries']
-  spec.prepare_command = 'sh setup/build_libraries.sh'
+  # spec.preserve_paths = ['setup', 'Libraries']
+  # spec.prepare_command = 'sh setup/build_libraries.sh'
 end
-
