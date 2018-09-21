@@ -12,7 +12,7 @@ Pod::Spec.new do |spec|
 
   spec.requires_arc = true
   spec.source = { git: 'https://github.com/imTouch/HDWallet.git', tag: "v#{spec.version}" }
-  spec.source_files = 'HDWallet/**/*.{h,m,swift}'
+  spec.source_files = 'HDWallet/**/*.{h,m,swift}', 'HDWallet/Libraries/*'
   spec.private_header_files = 'HDWallet/**/HDWalletInternal.h'
   spec.module_map = 'HDWallet/HDWallet.modulemap'
   spec.ios.deployment_target = '8.0'
