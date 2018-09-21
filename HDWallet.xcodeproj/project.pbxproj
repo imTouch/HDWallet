@@ -244,7 +244,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C39E3D4A20C129F60004056E /* Build configuration list for PBXNativeTarget "HDWallet" */;
 			buildPhases = (
-				C361D55120C5057C00C0AEDE /* Build Libraries */,
 				C39E3D3D20C129F60004056E /* Sources */,
 				C39E3D3E20C129F60004056E /* Frameworks */,
 				C39E3D3F20C129F60004056E /* Headers */,
@@ -357,24 +356,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		C361D55120C5057C00C0AEDE /* Build Libraries */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Build Libraries";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "if [ ! -d \"$SRCROOT/Libraries/secp256k1/lib\" ] || [ ! -d \"$SRCROOT/Libraries/openssl/lib\" ]; then\nenv -i PATH=$PATH sh \"$SRCROOT/setup/build_libraries.sh\"\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C361D58F20C5751000C0AEDE /* Sources */ = {
