@@ -8,7 +8,7 @@
 
 import Foundation
 
-class WordList {
+public class WordList {
     static var english: [String.SubSequence] =  {
         let words =
             """
