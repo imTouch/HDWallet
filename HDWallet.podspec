@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name = 'HDWallet'
-  spec.version = '0.1.3'
+  spec.version = '0.1.4'
   spec.summary = 'Hierarchical Deterministic Wallet'
   spec.description = <<-DESC
                        A pure and powerful Swift HDWallet library.
