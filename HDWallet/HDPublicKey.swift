@@ -57,6 +57,10 @@ public class HDPublicKey {
         return Base58.encode(data + checksum)
     }
     
+    public func publicKey() -> PublicKey {
+        return PublicKey(bytes: raw, network: network)
+    }
+    
     public func derived(at index: UInt32) throws -> HDPublicKey {
         // As we use explicit parameter "hardened", do not allow higher bit set.
         if ((0x80000000 & index) != 0) {

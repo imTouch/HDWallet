@@ -24,11 +24,6 @@
 		C361D58A20C52C6500C0AEDE /* HDKeychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = C361D58920C52C6500C0AEDE /* HDKeychain.swift */; };
 		C361D59820C5751000C0AEDE /* HDWallet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C39E3D4220C129F60004056E /* HDWallet.framework */; };
 		C361D59F20C5838300C0AEDE /* PrivateKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = C361D59E20C5838300C0AEDE /* PrivateKey.swift */; };
-		C3743B0B2137BABC00C43947 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3743B0A2137BABC00C43947 /* AppDelegate.swift */; };
-		C3743B0D2137BABC00C43947 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3743B0C2137BABC00C43947 /* ViewController.swift */; };
-		C3743B102137BABC00C43947 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3743B0E2137BABC00C43947 /* Main.storyboard */; };
-		C3743B122137BABE00C43947 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3743B112137BABE00C43947 /* Assets.xcassets */; };
-		C3743B152137BABE00C43947 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3743B132137BABE00C43947 /* LaunchScreen.storyboard */; };
 		C39E3D4720C129F60004056E /* HDWallet.h in Headers */ = {isa = PBXBuildFile; fileRef = C39E3D4520C129F60004056E /* HDWallet.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C3A1782C210ED4B8004661A1 /* HDWallet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C39E3D4220C129F60004056E /* HDWallet.framework */; };
 		C3A1782D210ED4B8004661A1 /* HDWallet.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C39E3D4220C129F60004056E /* HDWallet.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -85,12 +80,6 @@
 		C361D59320C5751000C0AEDE /* HDWalletTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HDWalletTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C361D59E20C5838300C0AEDE /* PrivateKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrivateKey.swift; sourceTree = "<group>"; };
 		C3743B082137BABC00C43947 /* Exsample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Exsample.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C3743B0A2137BABC00C43947 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C3743B0C2137BABC00C43947 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C3743B0F2137BABC00C43947 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		C3743B112137BABE00C43947 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		C3743B142137BABE00C43947 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		C3743B162137BABE00C43947 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C39E3D4220C129F60004056E /* HDWallet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HDWallet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C39E3D4520C129F60004056E /* HDWallet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDWallet.h; sourceTree = "<group>"; };
 		C39E3D4620C129F60004056E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -131,24 +120,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		C3743B092137BABC00C43947 /* Exsample */ = {
-			isa = PBXGroup;
-			children = (
-				C3743B0A2137BABC00C43947 /* AppDelegate.swift */,
-				C3743B0C2137BABC00C43947 /* ViewController.swift */,
-				C3743B0E2137BABC00C43947 /* Main.storyboard */,
-				C3743B112137BABE00C43947 /* Assets.xcassets */,
-				C3743B132137BABE00C43947 /* LaunchScreen.storyboard */,
-				C3743B162137BABE00C43947 /* Info.plist */,
-			);
-			path = Exsample;
-			sourceTree = "<group>";
-		};
 		C39E3D3820C129F50004056E = {
 			isa = PBXGroup;
 			children = (
 				C39E3D4420C129F60004056E /* HDWallet */,
-				C3743B092137BABC00C43947 /* Exsample */,
 				C39E3D4320C129F60004056E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -335,9 +310,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3743B152137BABE00C43947 /* LaunchScreen.storyboard in Resources */,
-				C3743B122137BABE00C43947 /* Assets.xcassets in Resources */,
-				C3743B102137BABC00C43947 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,8 +341,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3743B0D2137BABC00C43947 /* ViewController.swift in Sources */,
-				C3743B0B2137BABC00C43947 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,25 +387,6 @@
 			targetProxy = C3A1782E210ED4B8004661A1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		C3743B0E2137BABC00C43947 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C3743B0F2137BABC00C43947 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		C3743B132137BABE00C43947 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C3743B142137BABE00C43947 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		C361D59B20C5751000C0AEDE /* Debug */ = {

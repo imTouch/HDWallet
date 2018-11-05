@@ -82,10 +82,6 @@ public struct PrivateKey {
         self.network = network
     }
 
-    public func publicKey() -> PublicKey {
-        return PublicKey(privateKey: self, network: network)
-    }
-
     public func toWIF() -> String {
         let data = Data([network.privatekey]) + raw
         let checksum = Crypto.sha256sha256(data).prefix(4)
