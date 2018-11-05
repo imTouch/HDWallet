@@ -22,43 +22,9 @@
 		C361D58720C5236B00C0AEDE /* Mnemonic.swift in Sources */ = {isa = PBXBuildFile; fileRef = C361D58520C5236B00C0AEDE /* Mnemonic.swift */; };
 		C361D58820C5236B00C0AEDE /* WordList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C361D58620C5236B00C0AEDE /* WordList.swift */; };
 		C361D58A20C52C6500C0AEDE /* HDKeychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = C361D58920C52C6500C0AEDE /* HDKeychain.swift */; };
-		C361D59820C5751000C0AEDE /* HDWallet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C39E3D4220C129F60004056E /* HDWallet.framework */; };
 		C361D59F20C5838300C0AEDE /* PrivateKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = C361D59E20C5838300C0AEDE /* PrivateKey.swift */; };
 		C39E3D4720C129F60004056E /* HDWallet.h in Headers */ = {isa = PBXBuildFile; fileRef = C39E3D4520C129F60004056E /* HDWallet.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C3A1782C210ED4B8004661A1 /* HDWallet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C39E3D4220C129F60004056E /* HDWallet.framework */; };
-		C3A1782D210ED4B8004661A1 /* HDWallet.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C39E3D4220C129F60004056E /* HDWallet.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		C361D59920C5751000C0AEDE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C39E3D3920C129F50004056E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C39E3D4120C129F60004056E;
-			remoteInfo = EthereumKit;
-		};
-		C3A1782E210ED4B8004661A1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C39E3D3920C129F50004056E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C39E3D4120C129F60004056E;
-			remoteInfo = HDWallet;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		C3A17830210ED4B8004661A1 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				C3A1782D210ED4B8004661A1 /* HDWallet.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		C361D54920C4F8B500C0AEDE /* Encoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Encoding.swift; sourceTree = "<group>"; };
@@ -77,43 +43,17 @@
 		C361D58520C5236B00C0AEDE /* Mnemonic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mnemonic.swift; sourceTree = "<group>"; };
 		C361D58620C5236B00C0AEDE /* WordList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordList.swift; sourceTree = "<group>"; };
 		C361D58920C52C6500C0AEDE /* HDKeychain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HDKeychain.swift; sourceTree = "<group>"; };
-		C361D59320C5751000C0AEDE /* HDWalletTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HDWalletTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C361D59E20C5838300C0AEDE /* PrivateKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrivateKey.swift; sourceTree = "<group>"; };
-		C3743B082137BABC00C43947 /* Exsample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Exsample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C39E3D4220C129F60004056E /* HDWallet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HDWallet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C39E3D4520C129F60004056E /* HDWallet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDWallet.h; sourceTree = "<group>"; };
 		C39E3D4620C129F60004056E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C3A1781A210ED3CA004661A1 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		C361D59020C5751000C0AEDE /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C361D59820C5751000C0AEDE /* HDWallet.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C3743B052137BABC00C43947 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		C39E3D3E20C129F60004056E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C3A17817210ED3CA004661A1 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C3A1782C210ED4B8004661A1 /* HDWallet.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,9 +72,6 @@
 			isa = PBXGroup;
 			children = (
 				C39E3D4220C129F60004056E /* HDWallet.framework */,
-				C361D59320C5751000C0AEDE /* HDWalletTests.xctest */,
-				C3A1781A210ED3CA004661A1 /* Example.app */,
-				C3743B082137BABC00C43947 /* Exsample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -180,41 +117,6 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		C361D59220C5751000C0AEDE /* HDWalletTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C361D59D20C5751000C0AEDE /* Build configuration list for PBXNativeTarget "HDWalletTests" */;
-			buildPhases = (
-				C361D58F20C5751000C0AEDE /* Sources */,
-				C361D59020C5751000C0AEDE /* Frameworks */,
-				C361D59120C5751000C0AEDE /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C361D59A20C5751000C0AEDE /* PBXTargetDependency */,
-			);
-			name = HDWalletTests;
-			productName = EthereumKitTests;
-			productReference = C361D59320C5751000C0AEDE /* HDWalletTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		C3743B072137BABC00C43947 /* Exsample */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C3743B192137BABE00C43947 /* Build configuration list for PBXNativeTarget "Exsample" */;
-			buildPhases = (
-				C3743B042137BABC00C43947 /* Sources */,
-				C3743B052137BABC00C43947 /* Frameworks */,
-				C3743B062137BABC00C43947 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = Exsample;
-			productName = Exsample;
-			productReference = C3743B082137BABC00C43947 /* Exsample.app */;
-			productType = "com.apple.product-type.application";
-		};
 		C39E3D4120C129F60004056E /* HDWallet */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C39E3D4A20C129F60004056E /* Build configuration list for PBXNativeTarget "HDWallet" */;
@@ -233,25 +135,6 @@
 			productReference = C39E3D4220C129F60004056E /* HDWallet.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		C3A17819210ED3CA004661A1 /* Example */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C3A1782B210ED3CA004661A1 /* Build configuration list for PBXNativeTarget "Example" */;
-			buildPhases = (
-				C3A17816210ED3CA004661A1 /* Sources */,
-				C3A17817210ED3CA004661A1 /* Frameworks */,
-				C3A17818210ED3CA004661A1 /* Resources */,
-				C3A17830210ED4B8004661A1 /* Embed Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C3A1782F210ED4B8004661A1 /* PBXTargetDependency */,
-			);
-			name = Example;
-			productName = Example;
-			productReference = C3A1781A210ED3CA004661A1 /* Example.app */;
-			productType = "com.apple.product-type.application";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -262,18 +145,9 @@
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "ONEROOT PROJECT";
 				TargetAttributes = {
-					C361D59220C5751000C0AEDE = {
-						CreatedOnToolsVersion = 9.4;
-					};
-					C3743B072137BABC00C43947 = {
-						CreatedOnToolsVersion = 9.4.1;
-					};
 					C39E3D4120C129F60004056E = {
 						CreatedOnToolsVersion = 9.4;
 						LastSwiftMigration = 0940;
-					};
-					C3A17819210ED3CA004661A1 = {
-						CreatedOnToolsVersion = 9.4.1;
 					};
 				};
 			};
@@ -291,36 +165,12 @@
 			projectRoot = "";
 			targets = (
 				C39E3D4120C129F60004056E /* HDWallet */,
-				C361D59220C5751000C0AEDE /* HDWalletTests */,
-				C3A17819210ED3CA004661A1 /* Example */,
-				C3743B072137BABC00C43947 /* Exsample */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		C361D59120C5751000C0AEDE /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C3743B062137BABC00C43947 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		C39E3D4020C129F60004056E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C3A17818210ED3CA004661A1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -330,20 +180,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		C361D58F20C5751000C0AEDE /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C3743B042137BABC00C43947 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		C39E3D3D20C129F60004056E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -366,93 +202,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C3A17816210ED3CA004661A1 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		C361D59A20C5751000C0AEDE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C39E3D4120C129F60004056E /* HDWallet */;
-			targetProxy = C361D59920C5751000C0AEDE /* PBXContainerItemProxy */;
-		};
-		C3A1782F210ED4B8004661A1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C39E3D4120C129F60004056E /* HDWallet */;
-			targetProxy = C3A1782E210ED4B8004661A1 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin XCBuildConfiguration section */
-		C361D59B20C5751000C0AEDE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		C361D59C20C5751000C0AEDE /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		C3743B172137BABE00C43947 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Exsample/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.rootrex.Exsample;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		C3743B182137BABE00C43947 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Exsample/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.rootrex.Exsample;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 		C39E3D4820C129F60004056E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -652,65 +404,9 @@
 			};
 			name = Release;
 		};
-		C3A17829210ED3CA004661A1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7YR7S56M6N;
-				INFOPLIST_FILE = Example/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.oneroot.Example;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		C3A1782A210ED3CA004661A1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7YR7S56M6N;
-				INFOPLIST_FILE = Example/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.oneroot.Example;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C361D59D20C5751000C0AEDE /* Build configuration list for PBXNativeTarget "HDWalletTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C361D59B20C5751000C0AEDE /* Debug */,
-				C361D59C20C5751000C0AEDE /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C3743B192137BABE00C43947 /* Build configuration list for PBXNativeTarget "Exsample" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C3743B172137BABE00C43947 /* Debug */,
-				C3743B182137BABE00C43947 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		C39E3D3C20C129F50004056E /* Build configuration list for PBXProject "HDWallet" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -725,15 +421,6 @@
 			buildConfigurations = (
 				C39E3D4B20C129F60004056E /* Debug */,
 				C39E3D4C20C129F60004056E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C3A1782B210ED3CA004661A1 /* Build configuration list for PBXNativeTarget "Example" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C3A17829210ED3CA004661A1 /* Debug */,
-				C3A1782A210ED3CA004661A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
