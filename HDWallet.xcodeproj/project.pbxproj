@@ -12,6 +12,8 @@
 		1966351B21A6B8F40070AD09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1966351921A6B8F40070AD09 /* Main.storyboard */; };
 		1966351D21A6B8F40070AD09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1966351C21A6B8F40070AD09 /* Assets.xcassets */; };
 		1966352021A6B8F40070AD09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1966351E21A6B8F40070AD09 /* LaunchScreen.storyboard */; };
+		1966352521A6CEFB0070AD09 /* HDWallet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C39E3D4220C129F60004056E /* HDWallet.framework */; };
+		1966352621A6CEFB0070AD09 /* HDWallet.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C39E3D4220C129F60004056E /* HDWallet.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C361D54A20C4F8B500C0AEDE /* Encoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = C361D54920C4F8B500C0AEDE /* Encoding.swift */; };
 		C361D54C20C4F95600C0AEDE /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = C361D54B20C4F95600C0AEDE /* Network.swift */; };
 		C361D55420C5077000C0AEDE /* HDPrivateKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = C361D55320C5077000C0AEDE /* HDPrivateKey.swift */; };
@@ -30,6 +32,30 @@
 		C361D59F20C5838300C0AEDE /* PrivateKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = C361D59E20C5838300C0AEDE /* PrivateKey.swift */; };
 		C39E3D4720C129F60004056E /* HDWallet.h in Headers */ = {isa = PBXBuildFile; fileRef = C39E3D4520C129F60004056E /* HDWallet.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1966352721A6CEFB0070AD09 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C39E3D3920C129F50004056E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C39E3D4120C129F60004056E;
+			remoteInfo = HDWallet;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1966352921A6CEFB0070AD09 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1966352621A6CEFB0070AD09 /* HDWallet.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1966351321A6B8F30070AD09 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -66,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1966352521A6CEFB0070AD09 /* HDWallet.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,10 +185,12 @@
 				1966350F21A6B8F30070AD09 /* Sources */,
 				1966351021A6B8F30070AD09 /* Frameworks */,
 				1966351121A6B8F30070AD09 /* Resources */,
+				1966352921A6CEFB0070AD09 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				1966352821A6CEFB0070AD09 /* PBXTargetDependency */,
 			);
 			name = Example;
 			productName = Example;
@@ -278,6 +307,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		1966352821A6CEFB0070AD09 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C39E3D4120C129F60004056E /* HDWallet */;
+			targetProxy = 1966352721A6CEFB0070AD09 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		1966351921A6B8F40070AD09 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -301,11 +338,12 @@
 		1966352321A6B8F40070AD09 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7YR7S56M6N;
 				INFOPLIST_FILE = Example/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -322,11 +360,12 @@
 		1966352421A6B8F40070AD09 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7YR7S56M6N;
 				INFOPLIST_FILE = Example/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

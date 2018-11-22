@@ -14,6 +14,16 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        let wordlist = "pretty roast city lesson turtle favorite lesson canvas surface dismiss addict piece"
+
+        do {
+            let valid = try Mnemonic.isValid(wordlist)
+            if valid {
+                print("Valid mnemonics")
+            }
+        } catch {
+            print("Invalid mnemonics")
+        }
     }
 }
 
