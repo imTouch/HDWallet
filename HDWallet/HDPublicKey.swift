@@ -71,4 +71,26 @@ public class HDPublicKey {
         }
         return HDPublicKey(raw: derivedKey.publicKey!, chainCode: derivedKey.chainCode, network: network, depth: derivedKey.depth, fingerprint: derivedKey.fingerprint, childIndex: derivedKey.childIndex)
     }
+    
+    public func derivedKey(path: String) throws -> HDPublicKey {
+        var key = self
+        
+        var path = path
+        if path == "m" || path == "/" || path == "" {
+            return key
+        }
+        if path.contains("'") {
+            fatalError("invalid path")
+        }
+        if path.contains("m/") {
+            path = String(path.dropFirst(2))
+        }
+        for chunk in path.split(separator: "/") {
+            guard let index = UInt32(chunk) else {
+                fatalError("invalid path")
+            }
+            key = try key.derived(at: index)
+        }
+        return key
+    }
 }
