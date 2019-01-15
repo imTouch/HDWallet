@@ -18,6 +18,27 @@ public class HDPublicKey {
     let raw: Data
     let chainCode: Data
 
+    public init(serialized: String) {
+        let decoded = Base58.decode(serialized)
+        
+        // let version = decoded[0..<4]
+        // let depth = decoded[4..<5]
+        // let fingerPrint = decoded[5..<9]
+        // let childIndex = decoded[9..<13]
+        // let chainCode = decoded[13..<45]
+        // let privateKey = decoded[45..<78]
+        // let checksum = decoded[78..<82]
+        
+        self.network = .default
+        
+        self.raw = decoded[45..<78]
+        
+        self.fingerprint = decoded[5..<9].withUnsafeBytes({ $0.pointee })
+        self.depth = decoded[4..<5].withUnsafeBytes({ $0.pointee })
+        self.chainCode = decoded[13..<45]
+        self.childIndex = decoded[9..<13].withUnsafeBytes({ $0.pointee })
+    }
+    
     init(privateKey: HDPrivateKey, network: Network) {
         self.network = network
         self.raw = PublicKey.from(privateKey: privateKey.raw, compression: true)
