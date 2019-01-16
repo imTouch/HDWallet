@@ -29,7 +29,7 @@ public class HDPublicKey {
         // let privateKey = decoded[45..<78]
         // let checksum = decoded[78..<82]
         
-        self.network = .default
+        self.network = .mainnet
         
         self.raw = decoded[45..<78]
         
